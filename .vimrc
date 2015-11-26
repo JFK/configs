@@ -49,13 +49,15 @@ autocmd FileType python let g:pydiction_location = '~/.vim/pydiction/complete-di
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/home/vagrant/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 "NeoBundle install
-NeoBundle 'andviro/flake8-vim'
-"NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'andviro/flake8-vim'
+"cd ~/.vim/bundle/jedi-vim/jedi/
+"git submodule update --init
+NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic'
