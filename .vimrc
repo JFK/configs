@@ -45,7 +45,6 @@ set smarttab
 
 autocmd FileType python setl colorcolumn=80 textwidth=78
 
-autocmd FileType python let g:pydiction_location = '~/.vim/pydiction/complete-dict'
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
@@ -58,6 +57,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "cd ~/.vim/bundle/jedi-vim/jedi/
 "git submodule update --init
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic'
