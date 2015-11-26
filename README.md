@@ -2,4 +2,6 @@
 
 $ cd $HOME
 $ mkdir -p $HOME/.vim/bundle/
-$ https://travis-ci.org/JFK/spider-vagrant.svg?branch=master
+$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+$ cd ~/.vim/bundle/jedi-vim/jedi/
+$ git submodule update --init
